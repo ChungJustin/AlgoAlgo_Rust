@@ -1,3 +1,5 @@
+use std::io;
+
 fn main() {
    let mut s = String::new();
 
@@ -9,5 +11,5 @@ fn main() {
       .map(|s| s.parse().unwrap())
       .collect();
 
-   println!("{}", values[0] + values[1]);
+   println!("{:?}", values);
 }
